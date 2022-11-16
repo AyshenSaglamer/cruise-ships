@@ -1,7 +1,10 @@
+const Ship = require('../src/Ship.js')
 function Ship() {}
 
 module.exports = Ship;
 
-function ship (startingPort) {
-    this.startingPort = 'Dover';
-  }
+function Ship(startingPort) {
+  this.ship.startingPort = false
+}
+  
+
