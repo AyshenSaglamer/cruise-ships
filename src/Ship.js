@@ -1,10 +1,11 @@
-const Ship = require('../src/Ship.js')
-function Ship() {}
-
-module.exports = Ship;
-
 function Ship(startingPort) {
-  this.ship.startingPort = false
+  this.startingPort = startingPort;
 }
-  
 
+Ship.prototype.dock = function (portName) {
+  this.currentPort = portName;
+};
+Ship.prototype.setSail = function () {
+  this.startingPort = null;
+};
+module.exports = Ship;
