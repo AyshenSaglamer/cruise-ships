@@ -1,4 +1,5 @@
-function port(object){
-this.toBeInstanceOf = object;
+function port(currentPort) {
+  this.toBeInstanceOf = currentPort;
 }
+
 module.exports = port;
